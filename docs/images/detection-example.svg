@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">KOMaPa automatic panel detection example</title>
+  <desc id="desc">A sample manga page with seven panels grouped into two safe reading blocks.</desc>
+  <defs>
+    <style>
+      .ui{font-family:Inter,'Segoe UI',Arial,sans-serif}.ink{stroke:#17191c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.panel{fill:#fff;stroke:#17191c;stroke-width:3}.soft{fill:#f5f2ed}.muted{fill:#777b82}.orange{fill:#fa6848}.box{fill:none;stroke:#fa6848;stroke-width:5}.badge{fill:#fa6848}.small{font-size:14px}.body{font-size:16px}.title{font-size:28px;font-weight:700}.bold{font-weight:700}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#eeeae3"/>
+  <text class="ui title" x="64" y="55" fill="#202124">Automatic panel detection</text>
+  <text class="ui body" x="64" y="82" fill="#686b70">KOMaPa finds safe reading blocks in a manga page.</text>
+  <rect x="64" y="108" width="1072" height="590" rx="20" fill="#fff" stroke="#d8d3ca" stroke-width="2"/>
+  <path d="M64 128a20 20 0 0 1 20-20h1032a20 20 0 0 1 20 20v52H64z" fill="#faf9f7"/>
+  <rect x="88" y="126" width="30" height="30" rx="9" fill="#fa6848"/>
+  <path d="M96 148v-14l7 8 7-8v14" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="ui bold" x="130" y="148" font-size="20" fill="#222">KOMaPa</text>
+  <rect x="910" y="125" width="98" height="34" rx="9" fill="#fff" stroke="#ddd8d0"/>
+  <text class="ui small" x="929" y="147" fill="#4a4d51">Open CBR</text>
+  <rect x="1018" y="125" width="96" height="34" rx="9" fill="#fa6848"/>
+  <text class="ui small bold" x="1034" y="147" fill="#fff">Export CBZ</text>
+  <rect x="65" y="180" width="1070" height="517" fill="#262729"/>
+
+  <!-- Sample manga page: three panels above and four below. -->
+  <rect x="418" y="194" width="340" height="475" fill="#fff"/>
+  <rect class="panel" x="426" y="202" width="184" height="202"/>
+  <path d="M460 381c5-38 5-75 16-101 12-28 39-36 59-18 18 16 19 46 23 74l8 45z" fill="#222"/>
+  <ellipse cx="510" cy="283" rx="39" ry="50" fill="#f3f1ee" class="ink"/>
+  <path d="M473 272q14-57 69-37l13 24-15-7-11-17q-21 22-56 22z" fill="#161719"/>
+  <circle cx="495" cy="284" r="4" fill="#17191c"/><circle cx="526" cy="284" r="4" fill="#17191c"/>
+  <path d="M499 309q12 7 23 0" fill="none" class="ink"/>
+  <rect class="panel" x="618" y="202" width="132" height="96"/>
+  <ellipse cx="660" cy="240" rx="21" ry="24" fill="#f2f0ed" class="ink"/>
+  <path d="M640 238q8-28 36-18l8 12-11-2-8-8-19 16z" fill="#18191b"/>
+  <path d="M637 283q4-31 23-31 20 0 25 31" fill="#252629" class="ink"/>
+  <ellipse cx="716" cy="236" rx="19" ry="13" fill="#fff" class="ink"/><path d="M701 244l-7 9 17-6" fill="#fff" class="ink"/>
+  <rect class="panel" x="618" y="306" width="132" height="98"/>
+  <path d="M640 391q7-47 32-50 28 3 37 50" fill="#202124" class="ink"/>
+  <ellipse cx="672" cy="353" rx="21" ry="24" fill="#f1efec" class="ink"/>
+  <path d="M652 350q7-29 37-18l6 13-13-5-11-9-17 20z" fill="#151618"/>
+  <rect class="panel" x="426" y="416" width="157" height="111"/>
+  <rect class="panel" x="591" y="416" width="159" height="111"/>
+  <rect class="panel" x="426" y="539" width="157" height="121"/>
+  <rect class="panel" x="591" y="539" width="159" height="121"/>
+  <ellipse cx="474" cy="462" rx="18" ry="20" fill="#f3f1ee" class="ink"/><path d="M455 461q5-24 34-17l7 11-12-4-10-8-15 17z" fill="#151618"/><path d="M448 519q3-38 28-38 24 0 29 38" fill="#262729" class="ink"/>
+  <ellipse cx="654" cy="464" rx="18" ry="20" fill="#f3f1ee" class="ink"/><path d="M636 461q6-25 34-16l7 10-13-4-9-7-14 17z" fill="#151618"/><path d="M628 519q4-38 28-38 25 0 31 38" fill="#34363a" class="ink"/>
+  <ellipse cx="474" cy="587" rx="20" ry="22" fill="#f3f1ee" class="ink"/><path d="M453 584q7-28 39-17l7 13-14-6-10-9-16 19z" fill="#151618"/><path d="M443 653q6-39 31-39 27 0 34 39" fill="#262729" class="ink"/>
+  <ellipse cx="655" cy="587" rx="20" ry="22" fill="#f3f1ee" class="ink"/><path d="M634 584q7-28 39-17l7 13-14-6-10-9-16 19z" fill="#151618"/><path d="M624 653q6-39 31-39 27 0 34 39" fill="#34363a" class="ink"/>
+  <path d="M436 335q21-17 46-1 10 8 4 29h-46q-13-15-4-28z" fill="#fff" class="ink"/><path d="M449 350h24m-21 8h17" fill="none" stroke="#666" stroke-width="2"/>
+  <rect class="box" x="421" y="197" width="334" height="212" rx="2"/>
+  <rect class="badge" x="430" y="207" width="34" height="34" rx="17"/><text class="ui bold" x="443" y="230" font-size="18" fill="#fff">1</text>
+  <rect class="box" x="421" y="411" width="334" height="254" rx="2"/>
+  <rect class="badge" x="430" y="420" width="34" height="34" rx="17"/><text class="ui bold" x="443" y="443" font-size="18" fill="#fff">2</text>
+
+  <rect x="800" y="226" width="278" height="164" rx="16" fill="#fff"/>
+  <circle cx="830" cy="262" r="14" fill="#e7f4ed"/><path d="M823 262l5 5 10-11" fill="none" stroke="#24774b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="ui bold" x="856" y="268" font-size="18" fill="#202124">Safe grouping</text>
+  <text class="ui small" x="824" y="307" fill="#656970">Seven source panels are kept</text>
+  <text class="ui small" x="824" y="330" fill="#656970">together as two reading blocks.</text>
+  <rect x="824" y="355" width="225" height="8" rx="4" fill="#eee9e2"/><rect x="824" y="355" width="225" height="8" rx="4" fill="#fa6848"/>
+  <text class="ui small" x="800" y="442" fill="#d6d5d2">Orange outlines show the two crops.</text>
+</svg>

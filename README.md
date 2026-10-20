@@ -1,37 +1,54 @@
 # KOMaPa
 
-KOMaPa es una aplicación de escritorio para Windows que convierte mangas **CBR/CBZ** en un **CBZ optimizado para Kindle 10 y KOReader**.
+KOMaPa is a Windows desktop app that turns manga archives in **CBR or CBZ** format into a **Kindle 10 and KOReader friendly CBZ**.
+It automatically detects manga panels and arranges them into up to **3 reading blocks per source page**.
+Each block is fitted to a **600 × 800 pixel** page without stretching the artwork.
+If a safe panel boundary cannot be found, KOMaPa tries to split the page into two blocks.
+If that is still unsafe, it keeps the full page to avoid cutting through artwork or text.
+Progress bars show the import, page processing, and export steps.
 
-Detecta las viñetas automáticamente y crea hasta **3 bloques de lectura por página**. Ajusta cada bloque a **600 × 800 píxeles** y muestra el progreso al importar, analizar y exportar.
+## Examples
 
-Si no encuentra cortes seguros, intenta dividir la página en dos bloques; si tampoco puede hacerlo sin riesgo, conserva la página completa para evitar cortar dibujos o texto.
+These original illustrations show the app's intended workflow. They are **conceptual examples, not screenshots of the current interface**.
 
-## Requisitos
+### Automatic panel detection
 
-- Windows 10 u 11
-- Python 3.10 o posterior
+![Illustration of automatic manga panel detection](docs/images/detection-example.svg)
+
+### Kindle-ready reading pages
+
+![Illustration of manga panels arranged for Kindle](docs/images/kindle-output-example.svg)
+
+## Requirements
+
+- Windows 10 or 11
+- Python 3.10 or later
 - Pillow (`python -m pip install -r requirements.txt`)
-- Para archivos CBR: 7-Zip instalado. Los archivos CBZ no requieren 7-Zip.
+- 7-Zip for CBR archives. CBZ archives do not require 7-Zip.
 
-## Iniciar
+## Run KOMaPa
 
-1. Descomprime esta carpeta en el PC.
-2. Abre una terminal dentro de la carpeta y ejecuta `python -m pip install -r requirements.txt`.
-3. Ejecuta `python app.py`.
-4. Pulsa **Abrir CBR / CBZ**. La app analiza las páginas y muestra los límites detectados y el orden de lectura.
-5. Pulsa **Exportar CBZ** y guarda el archivo.
-6. Copia el CBZ resultante al Kindle por USB. En KOReader, ábrelo desde el explorador de archivos.
+1. Extract this folder on your PC.
+2. Open a terminal in the folder and run `python -m pip install -r requirements.txt`.
+3. Start the app with `python app.py`.
+4. Select **Abrir CBR / CBZ** (Open CBR / CBZ). KOMaPa analyzes the pages and displays detected boundaries and reading order.
+5. Select **Exportar CBZ** (Export CBZ) and choose where to save the result.
+6. Copy the resulting CBZ to your Kindle over USB, then open it from KOReader's file browser.
 
-Los recuadros numerados muestran la detección en orden de lectura. **Volver a detectar** repite el análisis si es necesario. Cada hoja produce como máximo tres bloques. Si no se pueden detectar paneles individuales con seguridad, la app busca una separación clara y estrecha para dividir la hoja en dos bloques; si tampoco encuentra una división segura, conserva la página completa para evitar cortar contenido.
+The numbered boxes show the detected reading order. Select **Volver a detectar** (Redetect) to run the analysis again if needed. Each source page produces no more than three reading blocks. If individual panels cannot be detected safely, KOMaPa looks for a clear, narrow boundary to split the page into two blocks. If it cannot find a safe split, it keeps the full page to avoid cutting content.
 
-## Formatos y límites
+## Formats and detection notes
 
-- CBZ se extrae directamente.
-- CBR necesita 7-Zip disponible en el PATH o en su ubicación habitual de instalación.
-- La detección automática busca calles claras y líneas divisorias oscuras. Los recortes se solapan sobre la calle detectada para conservar los trazos del marco en ambos lados.
-- Evita cortar bandas cortas de títulos y descarta divisiones que dejarían fragmentos demasiado pequeños, para mantener palabras y letras dentro de su panel.
-- Une automáticamente una franja horizontal muy baja con el panel contiguo cuando ambos comparten casi todo el ancho; así evita separar como panel una pequeña banda superior o inferior.
-- Junta hasta tres paneles pequeños que estén alineados en la misma fila. Si una separación muestra indicios de que un dibujo la cruza, intenta dividir la hoja en dos bloques usando una calle horizontal o vertical clara; si no encuentra una, conserva la página completa.
-- Evita tomar como división una franja blanca dentro del margen y conserva las viñetas pequeñas cuando sus bordes negros confirman que son paneles independientes.
-- Cada panel se ajusta dentro de una página blanca de 600 × 800 sin deformar la imagen.
-- El proyecto no cambia ni instala firmware en el Kindle.
+- CBZ archives are extracted directly.
+- CBR archives require 7-Zip available in `PATH` or installed in its usual location.
+- Automatic detection looks for clear gutters and dark divider lines. Crops overlap the detected gutter slightly to preserve the panel borders on both sides.
+- Short title bands are avoided, and splits that would leave tiny fragments are rejected so words and lettering stay with their panel.
+- A very short horizontal strip is automatically joined to its neighboring panel when they share nearly the full width. This avoids treating a small top or bottom band as a separate panel.
+- Up to three small panels aligned in the same row can be grouped into one reading block. If a drawing appears to cross a detected boundary, KOMaPa tries to split the page into two blocks along a clear horizontal or vertical gutter; if none is safe, it keeps the full page.
+- White strips inside the page margin are not treated as panel dividers, while small panels with clear black borders are preserved as independent panels.
+- Each reading block is fitted inside a white 600 × 800 pixel page without distorting the image.
+- KOMaPa does not modify or install firmware on the Kindle.
+
+## License
+
+KOMaPa is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE) for details.

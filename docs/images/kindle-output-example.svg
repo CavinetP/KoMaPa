@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">KOMaPa Kindle-ready output example</title>
+  <desc id="desc">Two portrait CBZ pages sized for a Kindle, formed from the top and bottom reading blocks of a sample manga page.</desc>
+  <defs>
+    <style>
+      .ui{font-family:Inter,'Segoe UI',Arial,sans-serif}.ink{stroke:#17191c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.panel{fill:#fff;stroke:#17191c;stroke-width:3}.small{font-size:14px}.body{font-size:16px}.title{font-size:28px;font-weight:700}.bold{font-weight:700}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#eeeae3"/>
+  <text class="ui title" x="64" y="55" fill="#202124">Kindle-ready output</text>
+  <text class="ui body" x="64" y="82" fill="#686b70">Each reading block becomes a portrait page in the exported CBZ.</text>
+  <rect x="64" y="108" width="1072" height="590" rx="20" fill="#faf9f7" stroke="#d8d3ca" stroke-width="2"/>
+  <rect x="436" y="126" width="328" height="42" rx="21" fill="#fff" stroke="#e1dcd4"/>
+  <circle cx="462" cy="147" r="6" fill="#44a875"/>
+  <text class="ui small bold" x="479" y="152" fill="#35383c">CBZ export · 600 × 800 px · KOReader</text>
+
+  <text class="ui bold" x="253" y="209" font-size="17" text-anchor="middle" fill="#26282b">01 · upper block</text>
+  <text class="ui bold" x="850" y="209" font-size="17" text-anchor="middle" fill="#26282b">02 · lower block</text>
+  <rect x="126" y="228" width="254" height="382" rx="15" fill="#222426"/>
+  <rect x="145" y="247" width="216" height="344" fill="#fff"/>
+  <rect class="panel" x="151" y="253" width="111" height="164"/>
+  <ellipse cx="206" cy="310" rx="23" ry="31" fill="#f2f0ed" class="ink"/><path d="M183 306q8-39 43-23l10 20-14-8-10-11-24 24z" fill="#161719"/><path d="M180 407q5-57 28-57 25 0 31 57" fill="#252629" class="ink"/>
+  <rect class="panel" x="269" y="253" width="86" height="78"/>
+  <ellipse cx="299" cy="281" rx="15" ry="18" fill="#f2f0ed" class="ink"/><path d="M284 279q5-22 29-12l5 12-10-4-8-7-12 13z" fill="#17191c"/><path d="M279 326q3-27 20-27 18 0 22 27" fill="#252629" class="ink"/>
+  <rect class="panel" x="269" y="337" width="86" height="80"/>
+  <ellipse cx="300" cy="365" rx="15" ry="18" fill="#f2f0ed" class="ink"/><path d="M285 362q5-22 29-12l5 12-10-4-8-7-12 13z" fill="#17191c"/><path d="M279 412q3-27 20-27 18 0 22 27" fill="#252629" class="ink"/>
+  <path d="M151 429h204" stroke="#17191c" stroke-width="5"/>
+  <rect class="panel" x="151" y="439" width="96" height="67"/><rect class="panel" x="255" y="439" width="100" height="67"/>
+  <rect class="panel" x="151" y="514" width="96" height="70"/><rect class="panel" x="255" y="514" width="100" height="70"/>
+  <ellipse cx="199" cy="461" rx="13" ry="15" fill="#f2f0ed" class="ink"/><path d="M186 459q5-18 25-10l4 9-8-3-8-6-10 10z" fill="#17191c"/><path d="M181 501q3-22 18-22 16 0 20 22" fill="#282a2d" class="ink"/>
+  <ellipse cx="303" cy="461" rx="13" ry="15" fill="#f2f0ed" class="ink"/><path d="M290 459q5-18 25-10l4 9-8-3-8-6-10 10z" fill="#17191c"/><path d="M285 501q3-22 18-22 16 0 20 22" fill="#383a3e" class="ink"/>
+  <rect x="485" y="370" width="60" height="60" rx="30" fill="#fff" stroke="#e1dcd4" stroke-width="2"/><path d="M509 400h13m-6-7 7 7-7 7" fill="none" stroke="#fa6848" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="723" y="228" width="254" height="382" rx="15" fill="#222426"/>
+  <rect x="742" y="247" width="216" height="344" fill="#fff"/>
+  <rect class="panel" x="748" y="253" width="96" height="77"/><rect class="panel" x="852" y="253" width="100" height="77"/>
+  <rect class="panel" x="748" y="336" width="96" height="77"/><rect class="panel" x="852" y="336" width="100" height="77"/>
+  <ellipse cx="794" cy="279" rx="13" ry="15" fill="#f2f0ed" class="ink"/><path d="M781 277q5-18 25-10l4 9-8-3-8-6-10 10z" fill="#17191c"/><path d="M776 325q3-22 18-22 16 0 20 22" fill="#282a2d" class="ink"/>
+  <ellipse cx="900" cy="279" rx="13" ry="15" fill="#f2f0ed" class="ink"/><path d="M887 277q5-18 25-10l4 9-8-3-8-6-10 10z" fill="#17191c"/><path d="M882 325q3-22 18-22 16 0 20 22" fill="#383a3e" class="ink"/>
+  <ellipse cx="794" cy="362" rx="13" ry="15" fill="#f2f0ed" class="ink"/><path d="M781 360q5-18 25-10l4 9-8-3-8-6-10 10z" fill="#17191c"/><path d="M776 408q3-22 18-22 16 0 20 22" fill="#282a2d" class="ink"/>
+  <ellipse cx="900" cy="362" rx="13" ry="15" fill="#f2f0ed" class="ink"/><path d="M887 360q5-18 25-10l4 9-8-3-8-6-10 10z" fill="#17191c"/><path d="M882 408q3-22 18-22 16 0 20 22" fill="#383a3e" class="ink"/>
+  <path d="M748 425h204" stroke="#17191c" stroke-width="5"/>
+  <rect class="panel" x="748" y="435" width="204" height="149"/>
+  <path d="M754 578q5-95 67-113 44-14 84 19 33 27 41 94z" fill="#ece9e4" class="ink"/>
+  <ellipse cx="850" cy="489" rx="30" ry="37" fill="#f4f2ef" class="ink"/><path d="M820 484q13-54 61-28l13 28-19-9-15-18-32 31z" fill="#17191c"/>
+  <path d="M823 499q8 5 15 0m22 0q8 5 15 0" fill="none" class="ink"/>
+  <rect x="468" y="646" width="264" height="30" rx="15" fill="#fff" stroke="#e1dcd4"/>
+  <text class="ui small" x="600" y="666" text-anchor="middle" fill="#60646a">Preserved borders · no image stretching</text>
+</svg>
