@@ -1,0 +1,43 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local Python environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Manga archives and generated panel books (keep copyrighted/source content local)
+*.cbr
+*.cbz
+*.cb7
+*.cbt
+
+# Temporary extraction and formatting folders created by KOMaPa
+manga_panels_*/
+manga_formateado_*/
+
+# Local detection previews/debug overlays
+page*-detection-debug.png
+page*-source-preview.png
+page*-detection-result.png
+/README copy.md
+
+# Build outputs and logs
+build/
+dist/
+*.log
